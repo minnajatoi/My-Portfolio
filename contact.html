@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minna Jatoi Web Development</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Minna Jatoi's Portfolio</h1>
+        <nav>
+            <hr>
+            <a href="./index.html">Home</a>|
+            <a href="projects.html">Projects</a>|
+            <a href="contact.html">Contact</a>|
+            </hr>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <hr>
+            <h2>Get In Touch</h2>
+            <p>use the form below to send me a message.</p>
+        </section>
+        <section>
+            <form>
+                <fieldset>
+                    <br>
+                    <legend>Your Details</legend>
+                    <p>
+                        <label for="name">Full Name:</label><br>
+                        <input type="text" id="name" name="full name" required size="40">
+                    </p>
+                    <p>
+                        <label for="email">Email Address:</label><br>
+                        <input type="email" id="email" name="email Address" required size="40">
+                    </p>
+                    <p>
+                        <label for="phone">Phone Number(Optional):</label><br>
+                        <input type="tel" id="phone" name="phone number" required size="40">
+                    </p>
+                </fieldset>
+        </section>
+
+        <fieldset>
+            <legend>Message Information</legend>
+            <P>
+                <label for="subject">Subject:</label><br>
+                <input type="text" id="subject" name="subject" required size="40">
+            </P>
+            <p>
+                <label for="message">Message Details(Min 20 Characters):</label><br>
+                <textarea id="message" name="message-details" rows="7" cols="40" minlength="20" required></textarea>
+            </p>
+        </fieldset>
+        <button type="sumbit">Send Message</button>
+        </form>
+
+    </main>
+    <hr>
+    <footer>
+        <p>Email:<a href="minnajatoi@gmail.com">minnajatoi@gmail.com</a></p>
+        <p>Copyright 2025|All Rights Reserved | Minna Jatoi</p>
+    </footer>
+</body>
+
+</html>
