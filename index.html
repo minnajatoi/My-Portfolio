@@ -1,70 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Minna Jatoi Web Developer</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Trails</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navigation Bar -->
+<header>
+  <nav class="navbar">
+    <h2 class="logo">Elite Trails</h2>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#tips">Travel Tips</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <body>
-    <header>
-      <link rel="stylesheet" href="./style.css" />
-        <h1>Minna Jatoi's Portfolio</h1>
-      <nav>
-        <a href="./index.html">Home</a>|
-         <a href="projects.html">Projects</a>|
-        <a href="contact.html">Contact</a>|
-      </nav>
-    </header>
-    <main>
-      <section>
-        <h2>About Me</h2>
-        <img
-          src="https://i.pinimg.com/474x/ef/c9/6e/efc96e2842bccdef3c85ce54722591c0.jpg"
-          alt="A person named Minna Jatoi "
-          width="145"
-          height="150"
-        />
-        <p class="intro">An Aspiring Web Developer</p>
-        <p class="intro">
-          I am a student of People Information Technology Program(PITP),
-          currently enrolled in the course of Web Development. This portfolio
-          showcase my projects and learning skills.
-        </p>
-      </section>
-      <hr />
-      <section>
-        <h2>My Skills (week 1 focusing on HTML)</h2>
-        <table border="5">
-          <thead>
-            <th>Skill Name</th>
-            <th>Status</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="skills">Basics of HTML</td>
-              <td class="status">comlete</td>
-            </tr>
-            <tr>
-              <td class="skills">Semantics of HTML5</td>
-              <td class="status">Basics</td>
-            </tr>
-            <tr>
-              <td class="skills">Forms And Multimedia in HTML5</td>
-              <td class="status">Complete</td>
-            </tr>
-            <tr>
-              <td class="skills">HTML Portfolio Project</td>
-              <td class="status">In Progress</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-    </main>
-    <hr />
-    <footer>
-      <p>Email:<a href="minnajatoi@gmail.com">minnajatoi@gmail.com</a></p>
-      <p>Copyright 2025|All Rights Reserved | Minna Jatoi</p>
-    </footer>
-  </body>
+
+
+ <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Welcome to Elite Trails</h1>
+      <p>Embark on unforgettable adventures and discover the beauty of the world with us.</p>
+      <a href="#destinations" class="btn">Explore Now</a>
+    </div>
+  </section>
+
+
+
+ <!-- About Section -->
+<section class="about" id="about">
+  <h2>About Elite Trails</h2>
+  <p class="about-text">
+    At Elite Trails, we believe travel is not just about destinations — it’s about the stories you create along the way.
+    Our mission is to make every journey effortless, memorable, and extraordinary. 
+    With a passionate team and years of experience, we craft adventures that go beyond expectations.
+  </p>
+
+  <div class="team">
+    <div class="team-member">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT4GisCm9hkQ7Gn41WUrw_TiL5HPAM1GOn0A&s" alt="Founder image">
+      <h3>Alex Carter</h3>
+      <p>Founder & CEO</p>
+    </div>
+
+    <div class="team-member">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOvV4bVLBpgWtIazY8NM9YsbfGyhCf-7-JkA&s" alt="Co-founder image">
+      <h3>Sophia Bennett</h3>
+      <p>Co-Founder & Operations Head</p>
+    </div>
+
+    <div class="team-member">
+      <img src="https://img.freepik.com/free-photo/handsome-young-businessman-suit_273609-6513.jpg?semt=ais_hybrid&w=740&q=80" alt="Travel Manager">
+      <h3>James Lee</h3>
+      <p>Travel Experience Manager</p>
+    </div>
+  </div>
+</section>
+
+<!-- Destinations Section -->
+ <section id="destinations" class="destinations">
+    <h2>Top Destinations</h2>
+    <div class="grid">
+      <div class="card"><img src="https://static.independent.co.uk/2025/04/25/13/42/iStock-1498516775.jpg?width=1200&height=1200&fit=crop" alt="paris image"><h3>Paris,France</h3><p>The city of lights and love.</p>      <span class="price">$1,800</span></div>
+      <div class="card"><img src="https://i.pinimg.com/736x/c0/70/f9/c070f9b7d6abc285c299284af6c848cf.jpg" alt="Bali,Indonesia image"><h3>Bali,Indonesia</h3><p>Beautiful beaches and serene templates.</p>  <span class="price">$1,200</span>  </div>
+      <div class="card"><img src="https://www.lot.com/content/dam/lot/lot-com/destination-photos/japonia/Tokyo-5%20.coreimg.jpg/1723628368208/Tokyo-5%20.jpg" alt="tokyo,japan picture"><h3>Tokyo,Japan</h3><p>Where tradition meets technology.</p><span class="price">$1,700</span></div>
+      <div class="card"><img src="https://i.pinimg.com/736x/b6/58/e3/b658e3ea08d0229c04ce352d1d445f27.jpg" alt="santorini,greece image"><h3>Santorini,Greece</h3><p>Famous for sunsets and white-blue domes.</p><span class="price">$1,900</span></div>
+      <div class="card"><img src="https://media.istockphoto.com/id/531625878/photo/times-square.jpg?s=612x612&w=0&k=20&c=HVB1MVPGQEOHRML04NbAtfGbaDldRIPUGGwAljBDvi8=" alt="New York,USA image"><h3>New York,USA</h3><p>The city that never sleeps.</p><span class="price">$2,000</span></div>
+      <div class="card"><img src="https://thumbs.dreamstime.com/b/beautiful-skyline-view-dubai-uae-as-seen-dubai-frame-sunset-showing-burj-khalifa-emirates-towers-index-building-81334831.jpg" alt="Dubai,UAE image"><h3>Dubai,UAE</h3><p>Luxury,adventure and skyscrapers.</p><span class="price">$1,000</span></div>
+      <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQITjTt8kqLTelsfYt-9tPZ__xs9QmWiK2xFw&s" alt="Rome,Italy Image"><h3>Rome,Italy</h3><p>Walk through centuries of history.</p><span class="price">$1,500</span></div>
+      <div class="card"><img src="https://images.prismic.io/visiticeland/5dd97c2e-0df7-4607-86f2-59ababbeea64_Eystrahorn_Mountain_East_Iceland.jpg?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&rect=0%2C84%2C1621%2C913&w=950&h=535" alt="Iceland image"><h3>Iceland</h3><p>Land of glaciers and northern lights</p><span class="price">$3,000</span></div>
+      <div class="card"><img src="https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2023/06/best-hotels-resorts-maldives.jpg?fit=1280%2C720&ssl=1" alt="Maldives image"><h3>Maldives</h3><p>Crystal-clear water and luxury resorts</p><span class="price">$1,200</span></div>
+      <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDrfj2q4P5cMplIfQWxxaSqLufVbXClN8CQA&s" alt="Serengeti,Tanzania image"><h3>Serengeti,Tanzania</h3><p>Experience the wild safari.</p><span class="price">$1,200</span></div>
+      <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIS302cAif9HK1WYvm7MPeE-qj0Wj5LkXctg&s" alt="Banff,Canada image"><h3>Banff,Canada</h3><p>Nature's masterpiece of turquoise lakes and alpine peaks.</p><span class="price">$1,300</span></div>
+      <div class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCg6Gnm6l10_HW_3ZGEcCpkVchAV7sNzcDYw&s" alt="Seoul,South Korea image"><h3>Seoul,South Korea</h3><p>Trendy streets meet centuries-old places.</p><span class="price">$1,250</span></div>
+  </section>
+
+  <!-- Travel Tips Section -->
+  <section id="tips" class="tips">
+    <h2>Travel Tips</h2>
+    <div class="grid">
+      <div class="tip"><h3>1. Pack Smart</h3><p>Travel light and bring only essentials.</p></div>
+      <div class="tip"><h3>2. Stay Hydrated</h3><p>Always keep a water bottle with you.</p></div>
+      <div class="tip"><h3>3. Learn Local Customs</h3><p>Show respect and connect with locals.</p></div>
+      <div class="tip"><h3>4. Travel Insurance</h3><p>Stay safe and covered during your journey.</p></div>
+      <div class="tip"><h3>5. Backup Documents</h3><p>Keep copies of important documents.</p></div>
+      <div class="tip"><h3>6. Stay Connected</h3><p>Get a local SIM card or potable WIFI to stay connected.</p></div>
+      <div class="tip"><h3>7. Secure Your Belongings</h3><p>Use anti-theft bags and keep valuables close.</p></div>
+      <div class="tip"><h3>8. Keep Emergency Cash</h3><p>Have a small amount of local currency ready.</p>
+    </div>
+  </section>
+    <!--Packages section-->
+   <section id="packages" class="packages">
+  <h2>Our Packages</h2>
+  <div class="grid">
+    <div class="package">
+      <img src="https://www.rowadventures.com/sites/rowadventures.com/files/images/rogue-river-rafting.jpg" alt="Adventure Escape">
+      <h3>Adventure Escape</h3>
+      <p>7-day hiking and rafting tour for thrill-seekers. Explore breathtaking landscapes and hidden trails.</p>
+      <p class="deal">🔥 Special Deal: 20% off for early bookings!</p>
+    </div>
+
+    <div class="package">
+      <img src="//media.istockphoto.com/id/158988213/photo/cafe-and-pool-on-a-tropical-beach.jpg?s=612x612&w=0&k=20&c=2Yk5-2VvHn7Ypo3v98H7HoWgd7UtFttnGx2JOH9AS2A=" alt="Beach Paradise">
+      <h3>Beach Paradise</h3>
+      <p>Relax on pristine beaches with luxury seaside resorts and sunset dinners by the ocean.</p>
+      <p class="deal">🌴 Deal: Book 5 nights, get 1 free!</p>
+      <span class="price">$899</span>
+    </div>
+
+  
+
+    <div class="package">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRssSv1vBA_X-ozEhBKqu4RaaQ_lfmQ_0Kww&s" alt="Cruise Voyage">
+      <h3>Cruise Voyage</h3>
+      <p>Luxury cruise experience across stunning coastlines — enjoy onboard shows and fine dining.</p>
+      <p class="deal">🚢 Deal: 10% off balcony suites for first-time cruisers!</p>
+       <span class="price">$1000</span>
+    </div>
+  </div>
+
+  <h3 class="sub-heading">🌟 Special Travel Deals</h3>
+  <div class="grid">
+    <div class="package">
+      <img src="https://www.flamingotravels.co.in/blog/wp-content/uploads/2023/01/Untitled-design-5.jpg" alt="European Escape">
+      <h3>European Escape</h3>
+      <p>Explore 5 iconic European cities in one grand tour.</p>
+      <p class="deal">💶 Save up to 25% on spring departures!</p>
+       <span class="price">$1,800</span>
+    </div>
+
+    <div class="package">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbwDUWjnuRK7vo8GEFgXw5kejJqcb4y6bPFw&s" alt="Family Getaway">
+      <h3>Family Getaway</h3>
+      <p>Fun-filled vacation packages with family-friendly resorts and guided tours.</p>
+      <p class="deal">👨‍👩‍👧‍👦 Deal: Kids under 10 travel free!</p>
+       <span class="price">$1,500</span>
+    </div>
+
+    <div class="package">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA5IVKNBH3__EcQ5O8AtlRbWXPOnKUeXvoFA&s" alt="Desert Expedition">
+      <h3>Desert Expedition</h3>
+      <p>Ride across golden dunes, camp under the stars, and discover desert life like never before.</p>
+      <p class="deal">🏜️ Deal: Free camel safari with every booking!</p>
+       <span class="price">$1,800</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+  <h2>Contact Us</h2>
+
+  <div class="contact-container">
+    <!-- Left Side: Contact Info -->
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p><strong>Phone:</strong> +1 234 567 890</p>
+      <p><strong>Email:</strong> info@elitetrails.com</p>
+      <p><strong>Address:</strong> 123 Adventure Street, Wanderlust City</p>
+      <p>Have questions or need help planning your next trip?  
+         Our travel experts are here to guide you every step of the way.</p>
+    </div>
+
+    <!-- Right Side: Contact Form -->
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="text" placeholder="Subject">
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+  <footer>
+    <p>© 2025 Elite Trails | Discover the World in Style</p>
+  </footer>
+
+</body>
 </html>
+
+
+
+
+
